@@ -15,9 +15,8 @@ class db{
     
     function get($table)  {  
         $link = $this->connect();
-        $result = $link->query("SELECT * FORM {$table}");
-        $row = $result->fetch();
-        return $row;
+        $result = $link->query("SELECT * FROM {$table}");        
+        return $result;
     }
 }
 ?>
